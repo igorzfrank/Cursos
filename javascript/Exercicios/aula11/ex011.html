@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde você é?</title>
+</head>
+<body>
+    <h1>
+        Qual o seu País de origem?
+    </h1>
+    Eu nasci em: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txt = window.document.getElementById('txtp')
+            var res = window.document.getElementById('res')
+            var pais = txt.value
+            if (pais == 'Brasil') {
+                res.innerHTML = `<p>Você é <strong>Brasileiro!</strong></p>`
+            } else {
+                res.innerHTML = `<p>Você é Estrangeiro do país ${pais}</p>`
+            }
+            res.innerHTML += `Tenha um Bom Dia!`
+        }
+    </script>
+</body>
+</html>

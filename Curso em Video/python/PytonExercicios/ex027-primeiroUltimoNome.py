@@ -1,0 +1,5 @@
+nome = str(input('Digite o seu nome completo: '))
+nomes = nome.split()
+print('Muito prazer em te conhecer!')
+print('O seu primeiro nome é {}!'.format(nomes[0].capitalize()))
+print('O seu último nome é {}!'.format(nomes[len(nomes)-1].capitalize()))

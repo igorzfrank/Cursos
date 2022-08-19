@@ -1,0 +1,10 @@
+print('='*20)
+print('10 TERMOS DE UMA PA')
+print('='*20)
+primeiroTermo = int(input('Primeiro termo: '))
+razao = int(input('Razão: '))
+print('='*20)
+for c in range(0,10):
+    resultado = primeiroTermo + (razao*c)
+    print(resultado, end=' > ')
+print('Acabou!')

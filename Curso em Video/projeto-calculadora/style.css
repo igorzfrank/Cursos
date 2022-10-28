@@ -1,0 +1,76 @@
+/* 
+    Paleta de cores:
+    Vermelho: #BD2A2E
+    Cinza Escuro: #3B3936
+    Cinza Claro: #B2BEBF
+    Cinza Esverdeado: #486966
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, #BD2A2E, #3B3936);
+}
+
+main {
+    background-color: #3B3936;
+    position: relative;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px darkred;
+    transform: translate(-50%, -50%);
+}
+
+.display {
+    width: 100%;
+    height: 20%;
+    padding: 20px 25px;
+}
+
+.display p {
+    height: 100%;
+    padding: 5px 10px;
+    text-align: right;
+    background: #B2BEBF;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border-radius: 10px;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.keys .teclas {
+    margin: 5px;
+    padding-top: 22px;
+    width: 20%;
+    height: 80px;
+    background: #486966;
+    color: #B2BEBF;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.keys .teclas:hover {
+    background-color: #B2BEBF;
+    color: #BD2A2E;
+    cursor: pointer;
+}

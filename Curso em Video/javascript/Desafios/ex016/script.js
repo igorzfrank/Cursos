@@ -17,9 +17,9 @@ function contar() {
             p = 1
         }
         if (i < f) {
-        for (var c = i; c <= f; c += p){
-            res.innerHTML += `&#x1F449 ${c} `
-        }
+            for (var c = i; c <= f; c += p){
+                res.innerHTML += `&#x1F449 ${c} `
+            }
         } else {
             for (var c = i; c >= f; c -= p){
                 res.innerHTML += `&#x1F449 ${c} `

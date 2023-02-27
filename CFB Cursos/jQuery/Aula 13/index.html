@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>
+                <h3>
+                    CFB Cursos
+                </h3>
+                <p>
+                    Curso de jQuery
+                </p>
+                <h2>
+                    Seletores irmãos
+                </h2>
+                <p>
+                    Siblings
+                </p>
+            </span>
+        </div>
+
+        <script>
+            $('h3').siblings().css({'border':'1px solid #f00'}); // -- Todos  irmãos
+            // $('h3').siblings('p').css({'border':'1px solid #f00'}); -- Todos os irmãos da categoria escolhida
+            // $('h3').next().css({'border':'1px solid #f00'}); -- Próximo irmão a direita/abaixo
+            // $('h2').prev().css({'border':'1px solid #f00'}); -- Próximo irmão a esquerda/acima
+            // $('h3').nextAll().css({'border':'1px solid #f00'}); -- Todos os irmãos a direita/abaixo
+            // $('h2').prevAll().css({'border':'1px solid #f00'}); -- Todos os irmãos a esquerda/acima
+            // $('h3').nextUntil().css({'border':'1px solid #f00'}); -- Todos os irmãos a direita/abaixo até 
+            // $('h3').prevUntil().css({'border':'1px solid #f00'}); -- Todos os irmãos a esquerda/acima até 
+        </script>
+    </body>
+</html>

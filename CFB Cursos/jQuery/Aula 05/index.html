@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+            #bloco {
+                width: 200px;
+                height: 200px;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="bloco"></div>
+        <p id="texto"></p>
+        <script>
+            $("#bloco").on({
+                click:()=>{$("#texto").text("Clique no quadrado!")},
+                mouseenter:()=>{$("#texto").text("Mouse entrou no quadro!")},
+                mouseleave:()=>{$("#texto").text("Mouse saiu do quadrado!")},
+                dblclick:()=>{$("#texto").text("Clique duplo no quadrado!")}
+            })
+        </script>
+    </body>
+</html>

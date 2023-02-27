@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+            .caixa {
+                border:1px solid #000;
+                width: 200px; 
+                height: 200px;
+                background-color: #008;
+                color: #fff;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+                left: 20px;
+                top: 50px;
+                padding: 10px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body> 
+        <div id="caixa" class="caixa">
+            <h3>CFB Cursos</h3>
+            <p>Curso de jQuery</p>
+        </div>
+
+        <button id="btn_mostrar">Mostrar</button>
+        <button id="btn_ocultar">Ocultar</button>
+        <button id="btn_ocultarmostar">Piscar</button>
+
+        <script>
+            $('#btn_mostrar').click(
+                function(){
+                    $('#caixa').fadeIn(1000)
+                }
+            )
+
+            $('#btn_ocultar').click(
+                function(){
+                    $('#caixa').fadeOut(1000)
+                }
+            )
+
+            $('#btn_ocultarmostar').click(
+                function(){
+                    $('#caixa').fadeOut().delay(1000).fadeIn()
+                }
+            )
+        </script>
+    </body>
+</html>

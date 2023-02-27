@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+        </style>
+    </head>
+    <body> 
+        <div id="caixa">
+            <h2>CFB Cursos</h2>
+            <p>Curso de jQuery</p>
+        </div>
+        <h2>Curso de jQuery</h2>
+        <input type="text" id="nome">
+        <script>
+            $('#caixa').click(
+                function() {
+                    alert("Texto: " + $(this).html())    //text() val() html()
+                }
+            )
+        </script>
+    </body>
+</html>

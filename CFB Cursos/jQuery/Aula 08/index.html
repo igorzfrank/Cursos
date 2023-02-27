@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p id="texto1">CFB Cursos</p>
+        <br>
+        <div id="texto2">Curso de jQuery</div>
+        <p id="resultado"></p>
+
+        <script>
+            $(document).click((event)=>{
+                $('#resultado').text("Objeto clicado: " + event.target.id)
+                if (event.target.id == "resultado") {
+                    alert("Resultado Clicado!")
+                }
+            })
+        </script>
+    </body>
+</html>

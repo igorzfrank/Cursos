@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+            .caixa {
+                border:1px solid #000;
+                width: 200px; 
+                height: 200px;
+                background-color: #008;
+                color: #fff;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                position: absolute;
+                left: 20px;
+                top: 50px;
+                padding: 10px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body> 
+        <div id="caixa" class="caixa">
+            <h3>CFB Cursos</h3>
+            <p>Curso de jQuery</p>
+        </div>
+
+        <button id="btn_aumentar">Aumentar</button>
+        <button id="btn_diminuir">Diminuir</button>
+        <button id="btn_mostrar">Ocultar / Mostrar</button>
+
+        <script>
+            $('#btn_aumentar').click(
+                function(){
+                    $('#caixa').delay(1000).animate({width:"500px"}).delay(1000).animate({height:"500px"}) // delay pode ser alinhado juntamente com o código.
+                }
+            )
+
+            $('#btn_diminuir').click(
+                function(){
+                    $('#caixa').delay(1000).animate({width:"200px"}).delay(1000).animate({height:"200px"}) // delay pode ser alinhado juntamente com o código.
+                }
+            )
+
+            $('#btn_mostrar').click(
+                function(){
+                    
+                }
+            )
+        </script>
+    </body>
+</html>

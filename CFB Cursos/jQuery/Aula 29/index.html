@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de jQuery</title>
+        <script src="../jquery-3.6.1.min.js"></script>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .menu {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+            }
+
+            #menus {
+                background-color: #888;
+                display: flex;
+                width: 100%;
+            }
+
+            .btnMenu {
+                margin: 5px;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+            #controle {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #f00;
+                padding: 5px;
+                border-radius: 0 0 10px 10px;
+                margin-left: 10px;
+                margin-right: auto;
+            }
+
+            #controle button {
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body> 
+        <div id="menu" class="menu">
+            <div id="menus">
+                <button class="btnMenu">home</button>
+                <button class="btnMenu">cursos</button>
+                <button class="btnMenu">material</button>
+                <button class="btnMenu">contatos</button>
+                <button class="btnMenu">sobre</button>
+            </div>
+            <div id="controle">
+                <button id="btnMenu">Menu</button>
+                <p id="msg">Menu exibido!</p>
+            </div>
+        </div>
+ 
+        <script>
+            $('#btnMenu').click(
+                function(){
+                    $('#menus').slideToggle(500, function(){
+                        if($('#menus').is(':visible')) {
+                            $('#msg').text('Menu exibido!')
+                            $('#controle').css('background','#f00')
+                        } else {
+                            $('#msg').text('Menu oculto!')
+                            $('#controle').css('background','#888')
+                        }
+                    })
+                }
+            )
+
+        </script>
+    </body>
+</html>

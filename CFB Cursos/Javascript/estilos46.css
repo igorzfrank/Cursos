@@ -42,6 +42,7 @@ button{
 .c1{
     background-color: #ccc;
     color: #444;
+    cursor: pointer;
 }
 
 .c2{

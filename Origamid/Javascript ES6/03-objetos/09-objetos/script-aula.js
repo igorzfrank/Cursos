@@ -82,7 +82,7 @@ const carro = {
   ano: 2018,
 };
 
-Object.freeze(carro); // impede qualquer mudança nas propriedades. 
+Object.freeze(carro); // impede qualquer mudança nas propriedades.
 Object.seal(carro); // previne a adição de novas propriedades e impede que as atuais sejam deletadas.
 Object.preventExtensions(carro); // previne a adição de novas propriedades.
 
@@ -90,3 +90,17 @@ carro.marca = "Honda";
 
 console.log(carro);
 console.log(Object.isFrozen(carro));
+
+const frutas3 = ["Banana", "Uva"];
+const frase = "Oi frase";
+const somar = function (a, b) {
+  return a + b;
+};
+
+const carro1 = {
+  marca: "Ford",
+};
+
+console.log(frutas.toString());
+
+console.log(Object.prototype.toString.call(frase))

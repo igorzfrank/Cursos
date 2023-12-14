@@ -1,7 +1,10 @@
-teste = 10
 
-if(teste) {
-    console.log('true')
-} else {
-    console.log('false')
-}
+let teste = []
+
+teste[3] = true
+
+console.log(teste)
+
+teste.forEach(item => {
+    console.log(item)
+})

@@ -25,7 +25,7 @@
 // notNull("Andre")?.toLocaleLowerCase();
 // notNull(200)?.toFixed();
 
-function tipoDado<T>(a: T) : {dado: T; tipo: string} {
+function tipoDado<T>(a: T): { dado: T; tipo: string } {
   const resultado = {
     dado: a,
     tipo: typeof a,
@@ -36,3 +36,32 @@ function tipoDado<T>(a: T) : {dado: T; tipo: string} {
 
 tipoDado(true).tipo;
 tipoDado(200).tipo;
+
+// function extractText<Tipo extends HTMLElement>(el: Tipo): string {
+//   return el.innerText;
+// }
+
+// const link = document.querySelector('a');
+
+function $<Tipo extends Element>(selector: string): Tipo | null {
+  return document.querySelector(selector);
+}
+
+const link = $<HTMLAnchorElement>("a")?.href;
+
+async function getData<T>(url: string): Promise<T> {
+  const response = await fetch(url);
+  return await response.json();
+}
+
+interface Notebook {
+  nome: string;
+  preco: number;
+}
+
+async function handleData() {
+  const notebook = await getData<Notebook>(
+    "https://api.origamid.dev/json/notebook.json"
+  );
+  console.log(notebook.nome);
+}

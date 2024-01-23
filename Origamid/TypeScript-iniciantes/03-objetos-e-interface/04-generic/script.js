@@ -29,3 +29,19 @@ function tipoDado(a) {
 }
 tipoDado(true).tipo;
 tipoDado(200).tipo;
+// function extractText<Tipo extends HTMLElement>(el: Tipo): string {
+//   return el.innerText;
+// }
+// const link = document.querySelector('a');
+function $(selector) {
+    return document.querySelector(selector);
+}
+const link = $("a")?.href;
+async function getData(url) {
+    const response = await fetch(url);
+    return await response.json();
+}
+async function handleData() {
+    const notebook = await getData("https://api.origamid.dev/json/notebook.json");
+    console.log(notebook.nome);
+}

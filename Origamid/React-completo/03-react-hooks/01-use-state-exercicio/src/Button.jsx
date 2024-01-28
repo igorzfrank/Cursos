@@ -2,7 +2,6 @@ import React from "react";
 
 const Button = ({ texto, setLink, setCarregando }) => {
 
-
   async function fetchLink(link) {
     setCarregando(true);
     const response = await fetch(

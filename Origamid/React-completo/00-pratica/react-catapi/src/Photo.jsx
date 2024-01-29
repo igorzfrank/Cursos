@@ -1,6 +1,7 @@
 import React from "react";
+import ButtonLike from "./ButtonLike";
 
-const Photo = () => {
+const Photo = ({ setNotification }) => {
   const [dados, setDados] = React.useState(null);
   const [load, setLoad] = React.useState(null);
 
@@ -26,7 +27,9 @@ const Photo = () => {
           height: "360px",
           background: "url(" + dados + ") no-repeat center center / cover",
         }}
-      ></div>
+      >
+        <ButtonLike setNotification={setNotification} />
+      </div>
     );
   } else {
     return null;

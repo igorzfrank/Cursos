@@ -15,14 +15,13 @@ const container = {
   flexWrap: "wrap",
 };
 
-const Body = () => {
-
+const Body = ({ setNotification }) => {
   return (
     <section style={bodyStyle}>
       <div style={container}>
-        <Photo />
-        <Photo />
-        <Photo />
+        <Photo setNotification={setNotification}/>
+        <Photo setNotification={setNotification}/>
+        <Photo setNotification={setNotification}/>
       </div>
       <Button />
     </section>

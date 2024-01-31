@@ -1,0 +1,9 @@
+footer {
+    background: lightgray;
+    padding: 60px 0px;
+}
+
+.footerContainer {
+    max-width: 812px;
+    margin: 0 auto;
+}

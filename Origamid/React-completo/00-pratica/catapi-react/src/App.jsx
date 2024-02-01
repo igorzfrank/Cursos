@@ -29,7 +29,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <Body />
+      {link && <Body links={link} />}
       <Footer />
     </>
   );

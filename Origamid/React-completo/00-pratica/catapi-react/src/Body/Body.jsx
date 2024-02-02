@@ -1,16 +1,21 @@
 import React from "react";
 import "./Body.css";
 import Photo from "../Photo/Photo";
+import GlobalContext from "../GlobalContext";
+import ButtonMore from "../ButtonMore/ButtonMore";
 
-const Body = ({ links }) => {
+const Body = () => {
+  const global = React.useContext(GlobalContext);
+
+  if (global.link.length < 1) return null;
   return (
     <section>
       <div className="container">
-        {links.map((link) => (
-          <Photo url={link} />
+        {global.link.map((link) => (
+          <Photo url={link} key={link} />
         ))}
       </div>
-      <button className="btnMore">Ver Mais</button>
+      <ButtonMore />
     </section>
   );
 };

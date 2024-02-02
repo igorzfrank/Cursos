@@ -1,0 +1,238 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(117, 106, 182, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  animation: zoom-in 0.3s forwards;
+  transform: translateY(200px);
+  opacity: 0;
+}
+
+@keyframes zoom-in {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.modalContainer {
+  padding: 60px;
+  width: 760px;
+  height: 431px;
+  background: white;
+  border-radius: 32px;
+  border: 3px solid var(--p3);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.modalContainer::before {
+  width: 60px;
+  height: 60px;
+  content: "";
+  background: url("../assets/ico/ico-cat-modal.svg") no-repeat center center /
+    contain;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.modalContainer::after {
+  width: 60px;
+  height: 60px;
+  content: "";
+  background: url("../assets/ico/ico-cat-modal.svg") no-repeat center center /
+    contain;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+.btnCloseModal {
+  position: absolute;
+  background: url("../assets/ico/ico-close-modal.svg") no-repeat center center /
+    cover;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btnCloseModal:hover {
+  background: url("../assets/ico/ico-close-modal-hover.svg") no-repeat center
+    center / cover;
+}
+
+.modalName {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.modalProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selectProfile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.miniProfile {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--p3);
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.miniProfile.is-active {
+  border: 2px solid var(--p1);
+}
+
+.miniProfile.is-active::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: url("../assets/ico/ico-cat-select-profile.svg") no-repeat center
+    center / contain;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.1));
+}
+
+.miniProfile#a {
+  background: url("../assets/img/mini-profile-1.png") no-repeat center center /
+    cover;
+}
+
+.miniProfile#b {
+  background: url("../assets/img/mini-profile-2.png") no-repeat center center /
+    contain;
+}
+
+.miniProfile#c {
+  background: url("../assets/img/mini-profile-3.png") no-repeat center center /
+    contain;
+}
+
+.miniProfile#d {
+  background: url("../assets/img/mini-profile-4.png") no-repeat center center /
+    cover;
+}
+
+.miniProfile#e {
+  background: url("../assets/img/mini-profile-5.png") no-repeat center center /
+    contain;
+}
+
+.miniProfile#f {
+  background: url("../assets/img/mini-profile-6.png") no-repeat center center /
+    contain;
+}
+
+.modalName {
+  padding-left: 30px;
+}
+
+.profileName {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.inputNameModal {
+  background: var(--p4);
+  border: 2px solid var(--p3);
+  border-radius: 32px;
+  line-height: 32px;
+  font-size: 18px;
+  padding: 0px 32px;
+}
+
+.inputNameModal:focus {
+  outline: 2px solid var(--p1);
+}
+
+.btnModalEnviar {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 0px;
+  width: 100%;
+  font-weight: bold;
+  color: var(--b1);
+  background: var(--p3);
+  display: block;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btnModalEnviar:hover {
+  color: var(--w1);
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    padding: 0px 20px;
+  }
+
+  .modalContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .modalContainer::before {
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .modalContainer::after {
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .selectProfile {
+    max-width: 200px;
+    gap: 10px;
+  }
+
+  .modalName {
+    margin-top: 20px;
+    padding: 0px;
+    gap: 20px;
+  }
+
+  .profileName {
+    text-align: center;
+  }
+}

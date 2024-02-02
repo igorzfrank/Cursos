@@ -1,18 +1,20 @@
 section {
-    padding: 120px 0px;
+  padding: 120px 0px;
+  background: url("../assets/bkg/bkg.svg") repeat left center / auto;
 }
 
 .container {
-    max-width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
-.btnMore {
-    display: block;
-    margin: 100px auto 0px auto;
+@media (max-width: 1024px) {
+  .container {
+    justify-content: center;
+  }
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import logo from '../assets/img/cat-lgo.svg'
 
 const Footer = () => {
   return (
     <footer>
       <div className="footerContainer">
-        <h2>Logo</h2>
+        <img src={logo} alt="" />
       </div>
     </footer>
   );

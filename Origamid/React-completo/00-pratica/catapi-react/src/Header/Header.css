@@ -1,12 +1,19 @@
 header {
-    padding: 30px 0px;
-    background: lightgray;
+  padding: 32px 120px;
+  z-index: 1;
+  background: linear-gradient(var(--p1), var(--p2));
 }
 
 .headerContainer {
-    max-width: 812px;
-    margin: 0 auto;
-    display: flex;
-    flex-shrink: 0;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 32px 20px;
+  }
 }

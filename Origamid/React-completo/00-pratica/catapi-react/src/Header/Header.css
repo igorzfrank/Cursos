@@ -1,7 +1,8 @@
 header {
   padding: 32px 120px;
   z-index: 1;
-  background: linear-gradient(var(--p1), var(--p2));
+  background: var(--p2);
+  border-bottom: 3px solid var(--p3);
 }
 
 .headerContainer {

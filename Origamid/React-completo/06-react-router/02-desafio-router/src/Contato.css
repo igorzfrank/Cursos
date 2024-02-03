@@ -1,0 +1,20 @@
+.contatoCointainer {
+  max-width: 912px;
+  margin: 0 auto;
+  min-height: 80vh;
+  animation: left 0.3s forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+@keyframes left {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.contatoCointainer ul {
+  margin-top: 20px;
+  margin-left: 20px;
+}

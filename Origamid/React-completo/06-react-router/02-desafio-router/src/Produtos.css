@@ -1,0 +1,29 @@
+.containerProdutos {
+  max-width: 912px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  animation: top 0.3s forwards;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+@keyframes top {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.containerProdutos img {
+  width: 290px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.produto {
+  padding-bottom: 32px;
+  cursor: pointer;
+}

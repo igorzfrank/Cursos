@@ -1,0 +1,42 @@
+.produtoContainer {
+  max-width: 912px;
+  margin: 0 auto 32px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  animation: left 0.3s forwards;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+@keyframes left {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.fotos img {
+  width: 320px;
+  border-radius: 8px;
+}
+
+.descricao {
+  max-width: 50%;
+  padding: 20px 30px;
+}
+
+.descricao .preco {
+  margin: 10px 0px;
+  padding: 4px 8px;
+  background: lightgreen;
+  color: darkgreen;
+  border-radius: 4px;
+  display: inline-block;
+}

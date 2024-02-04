@@ -9,10 +9,10 @@ const Modal = () => {
   const nameProfile = React.useRef();
 
   const [imgProfileUrl, setImgProfileUrl] = React.useState(
-    `/src/assets/img/profile.png`
+    `assets/img/profile.png`
   );
 
-  const [name, setName] = React.useState("Nome");
+  const [name, setName] = React.useState("Digite seu nome");
 
   const profile = ["a", "b", "c", "d", "e", "f"];
 
@@ -21,7 +21,7 @@ const Modal = () => {
     const localStorageName = window.localStorage.getItem("name");
 
     if (localStorageProfile != null) {
-      setImgProfileUrl(`/src/assets/img/profile-${localStorageProfile}.png`);
+      setImgProfileUrl(`assets/img/profile-${localStorageProfile}.png`);
     }
     if (localStorageName != null) {
       setName(localStorageName);
@@ -30,8 +30,8 @@ const Modal = () => {
 
   function handleChoice({ target }) {
     let miniProfiles = document.querySelectorAll(".miniProfile");
-    imgProfile.current.src = `/src/assets/img/profile-${target.id}.png`;
-    setImgProfileUrl(`/src/assets/img/profile-${target.id}.png`);
+    imgProfile.current.src = `assets/img/profile-${target.id}.png`;
+    setImgProfileUrl(`assets/img/profile-${target.id}.png`);
     window.localStorage.setItem("profile", target.id);
 
     miniProfiles.forEach((item) => {

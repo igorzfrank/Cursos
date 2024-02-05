@@ -2,27 +2,50 @@ import React from "react";
 import "./Modal.css";
 import GlobalContext from "../GlobalContext";
 import profileImg from "../assets/img/profile.png";
+import profileA from "../assets/img/profile-a.png";
+import profileB from "../assets/img/profile-b.png";
+import profileC from "../assets/img/profile-c.png";
+import profileD from "../assets/img/profile-d.png";
+import profileE from "../assets/img/profile-e.png";
+import profileF from "../assets/img/profile-f.png";
 
 const Modal = () => {
   const global = React.useContext(GlobalContext);
+  const profile = ["a", "b", "c", "d", "e", "f"];
+
   const imgProfile = React.useRef();
   const nameProfile = React.useRef();
 
-  const [imgProfileUrl, setImgProfileUrl] = React.useState(
-    `assets/img/profile.png`
-  );
-
+  const [imgProfileUrl, setImgProfileUrl] = React.useState(profileImg);
   const [name, setName] = React.useState("Digite seu nome");
-
-  const profile = ["a", "b", "c", "d", "e", "f"];
 
   React.useEffect(() => {
     const localStorageProfile = window.localStorage.getItem("profile");
     const localStorageName = window.localStorage.getItem("name");
 
     if (localStorageProfile != null) {
-      setImgProfileUrl(`assets/img/profile-${localStorageProfile}.png`);
+      switch (localStorageProfile) {
+        case "a":
+          setImgProfileUrl(profileA)
+          break;
+        case "b":
+          setImgProfileUrl(profileB)
+          break;
+        case "c":
+          setImgProfileUrl(profileC)
+          break;
+        case "d":
+          setImgProfileUrl(profileD)
+          break;
+        case "e":
+          setImgProfileUrl(profileE)
+          break;
+        case "f":
+          setImgProfileUrl(profileF)
+          break;
+      }
     }
+
     if (localStorageName != null) {
       setName(localStorageName);
     }
@@ -30,8 +53,28 @@ const Modal = () => {
 
   function handleChoice({ target }) {
     let miniProfiles = document.querySelectorAll(".miniProfile");
-    imgProfile.current.src = `assets/img/profile-${target.id}.png`;
-    setImgProfileUrl(`assets/img/profile-${target.id}.png`);
+
+    switch (target.id) {
+      case "a":
+        imgProfile.current.src = profileA;
+        break;
+      case "b":
+        imgProfile.current.src = profileB;
+        break;
+      case "c":
+        imgProfile.current.src = profileC;
+        break;
+      case "d":
+        imgProfile.current.src = profileD;
+        break;
+      case "e":
+        imgProfile.current.src = profileE;
+        break;
+      case "f":
+        imgProfile.current.src = profileF;
+        break;
+    }
+
     window.localStorage.setItem("profile", target.id);
 
     miniProfiles.forEach((item) => {

@@ -33,6 +33,14 @@ const Footer = () => {
                   TheCapAPI
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.figma.com/file/8AWX7Jfbey5XaEOntpwbDp/catlog?type=design&node-id=0%3A1&mode=design&t=VwdDSG8MLTz3AH3R-1"
+                  target="_blank"
+                >
+                  Figma
+                </a>
+              </li>
             </ul>
           </div>
           <div className="list">

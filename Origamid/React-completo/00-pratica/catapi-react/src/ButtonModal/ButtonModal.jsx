@@ -8,7 +8,7 @@ const ButtonModal = () => {
 
   return (
     <button className="btnModal" onClick={() => global.setModal(true)}>
-      <img src={login} alt="" /> Login
+      <img src={login} alt="" /> Perfil
     </button>
   );
 };

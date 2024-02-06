@@ -7,7 +7,7 @@ import ButtonMore from "../ButtonMore/ButtonMore";
 const Body = () => {
   const global = React.useContext(GlobalContext);
 
-  if (global.link.length < 1) return null;
+  if (global.link.length < 1) return <section><div className="container">Carregando...</div></section>;
   return (
     <section>
       <div className="container">

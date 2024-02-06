@@ -1,11 +1,11 @@
 section {
   padding: 120px 0px;
   background: url("../assets/bkg/bkg.svg") repeat left center / auto;
+  min-height: 80vh;
 }
 
 .container {
   max-width: 1024px;
-  min-height: 50vh;
   margin: 0 auto;
   display: flex;
   flex-shrink: 0;

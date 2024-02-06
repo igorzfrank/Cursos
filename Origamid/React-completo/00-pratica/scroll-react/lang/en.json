@@ -1,0 +1,40 @@
+{
+  "nav": [
+    {
+      "id": "home",
+      "link": "Home"
+    },
+    {
+      "id": "about",
+      "link": "About"
+    },
+    {
+      "id": "prices",
+      "link": "Prices"
+    },
+    {
+      "id": "contact",
+      "link": "Contact"
+    }
+  ],
+  "home": {
+    "id": "Home",
+    "title": "Title Home",
+    "content": "Content text of Home section"
+  },
+  "about": {
+    "id": "About",
+    "title": "Titulo About",
+    "content": "Content text of Home section"
+  },
+  "price": {
+    "id": "Prices",
+    "title": "Titulo Prices",
+    "content": "Content text of Home section"
+  },
+  "contact": {
+    "id": "Contact",
+    "title": "Titulo Contact",
+    "content": "Content text of Contact section"
+  }
+}

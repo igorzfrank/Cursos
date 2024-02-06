@@ -1,0 +1,36 @@
+{
+  "nav": [
+    {
+      "id": "home",
+      "link": "Home"
+    },
+    {
+      "id": "about",
+      "link": "Sobre"
+    },
+    {
+      "id": "prices",
+      "link": "Preços"
+    },
+    {
+      "id": "contact",
+      "link": "Contato"
+    }
+  ],
+  "home": {
+    "title": "Titulo Home",
+    "content": "Conteudo de texto da seção Home"
+  },
+  "about": {
+    "title": "Titulo Sobre",
+    "content": "Conteudo de texto da seção Sobre"
+  },
+  "price": {
+    "title": "Titulo Preço",
+    "content": "Conteudo de texto da seção Preço"
+  },
+  "contact": {
+    "title": "Titulo Contato",
+    "content": "Conteudo de texto da seção Contato"
+  }
+}

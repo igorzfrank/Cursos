@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --w: #ffffff;
+  --b: #000000;
+  --w1: #e5edf5;
+  --b1: #040a10;
+  --b2: #060d13;
+  --b3: #111f2c;
+  --b4: #1b3347;
+  --p1: #92c0e7;
+  --p2: #4f8bc1;
+  --p3: #2398ff;
+  --p4: #3495ea;
+  --p5: #175892;
+  --outfit: "Outfit", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--outfit);
+}
+
+body {
+  background: var(--b2);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+}
+
+a {
+  text-decoration: none;
+}
+
+.border {
+    border: 1px solid var(--p3);
+}

@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
+import useFetch from "../../Hooks/useFetch";
 
 const Photo = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  const { id } = useParams();
+  const { data, loading, error, request } = useFetch();
 
-export default Photo
+  React.useEffect(() => {
+    // request(url);
+  });
+  return <div>{id}</div>;
+};
+
+export default Photo;

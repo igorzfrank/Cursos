@@ -1,3 +1,113 @@
 {
-    
+  "nav": [
+    {
+      "id": "about",
+      "text": "About"
+    },
+    {
+      "id": "journey",
+      "text": "Journey"
+    },
+    {
+      "id": "project",
+      "text": "Projects"
+    },
+    {
+      "id": "contact",
+      "text": "Contact"
+    }
+  ],
+  "hero": {
+    "subStrong": "You",
+    "sub": "'are welcome",
+    "title": "Follow my ",
+    "titleStrong": "Journey"
+  },
+  "about": {
+    "title": {
+      "text": "Who i ",
+      "strong": "am",
+      "question": "?"
+    },
+    "slide": [
+      {
+        "firstText": "Nice to meet you, my name is ",
+        "firstTextStrong": "Igor Frank Moreno!",
+        "secondText": "I am a ",
+        "secondTextStrong": "Front-end Developer",
+        "secondTextMore": " with a degree in Systems Analysis and Development from Faculdade Estácio de Sá.",
+        "thirdText": "I have been working in the development market for over 2 years, in addition to taking several professional courses in the area."
+      },
+      {
+        "firstText": "I'm a musician by ",
+        "firstTextStrong": "Hobby!",
+        "secondText": "I know how to play different instruments, such as: ",
+        "secondTextStrong": "\"Electric Guitar, Acustic Guitar, Bass, Ukulele and Keyboard\".",
+        "thirdText": "I consider myself a \"self-taught\" person, that's how I learned to play all these instruments. In addition to having a great musical affinity."
+      },
+      {
+        "firstText": "I like to challenge myself and achieve ",
+        "firstTextStrong": "Big Goals!",
+        "secondText": "I managed to complete my first ",
+        "secondTextStrong": "Half Marathon (21km)",
+        "secondTextMore": " after 3 months of training!",
+        "thirdText": "I found myself doing physical activities again, I do bodybuilding regularly and my newest goal is to complete my first ",
+        "thirdTextStrong": "Marathon (42km)."
+      }
+    ]
+  },
+  "journey": {
+    "title": {
+      "text": "My ",
+      "strong": "Journey"
+    },
+    "card": [
+      {
+        "timeline": "During the period from 01/2022 to 09/2022 I worked as a Robotics and Programming Instructor within the Happy educational hub in Florianópolis.",
+        "activities": {
+          "id": "activities",
+          "title": "Activities",
+          "list": [
+            "Create and teach Arduino, Construct 3, Unity, Scratch, LEGO, Roblox Studio and Minecraft classes for students.",
+            "Carry out tests and corrections on student projects.",
+            "Search for new teaching methodologies.",
+            "Guide and explain to parents how the projects were being developed.",
+            "Prepare class presentation cases for enrollment conversion."
+          ]
+        },
+        "achievements": {
+          "id": "achievements",
+          "title": "Achievements",
+          "list": [
+            "With my entry into the educational hub, I was able to create complete Arduino class material.",
+            "I managed to publish several students within the itch.io platform.",
+            "I managed to maintain my student retention at a rate of 90%."
+          ]
+        }
+      },
+      {
+        "timeline": "In the period of 09/2022, I started working as an Intern in Front-End Development within the company DOT Digital Group, where I have been working until the current period.",
+        "activities": {
+          "id": "activities",
+          "title": "Activities",
+          "list": [
+            "Create and teach Arduino, Construct 3, Unity, Scratch, LEGO, Roblox Studio and Minecraft classes for students.",
+            "Carry out tests and corrections on student projects.",
+            "Search for new teaching methodologies.",
+            "Guide and explain to parents how the projects were being developed.",
+            "Prepare class presentation cases for enrollment conversion."
+          ]
+        },
+        "achievements": {
+          "id": "achievements",
+          "title": "Achievements",
+          "list": [
+            "With my entry into the educational hub, I was able to create complete Arduino class material.",
+            "I managed to publish several students within the itch.io platform.",
+            "I managed to maintain my student retention at a rate of 90%."
+          ]
+        }
+      }
+    ]
+  }
 }

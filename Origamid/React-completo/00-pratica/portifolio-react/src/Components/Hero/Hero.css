@@ -1,15 +1,65 @@
 .hero {
   margin: 0 auto;
-  padding: 80px 70px;
+  padding: 0px 70px 80px 70px;
   max-width: 1920px;
-  width: 100vw;
   height: 100svh;
+  position: relative;
 }
 
 .heroContainer {
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 120px);
   max-height: 960px;
   border-radius: 32px;
+  padding: 110px 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroDescription {
+  width: 706px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroDescription h4 {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.heroDescription h4 > strong {
+  font-family: var(--poppins);
+  font-size: 32px;
+  line-height: 32px;
+  color: var(--p3);
+  font-weight: 400;
+}
+
+.heroDescription h1 {
+  max-width: 550px;
+  font-size: 74px;
+  line-height: 74px;
+  text-transform: initial;
+  font-weight: 800;
+}
+
+.heroDescription h1 > strong {
+  font-family: var(--outfit);
+  font-size: 74px;
+  line-height: 74px;
+  color: var(--p3);
+  font-weight: 800;
+}
+
+.heroImg {
+  background: url("../../assets/img/img-disney.png") no-repeat center center /
+    contain;
+  width: 706px;
+  height: 100%;
+  cursor: pointer;
 }

@@ -1,0 +1,23 @@
+.about {
+  width: 100%;
+  padding: 90px 70px 120px 70px;
+  position: relative;
+}
+
+.about::after {
+  content: "";
+  background: var(--p3);
+  height: 2px;
+  max-width: 1420px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutTitle {
+  text-align: center;
+  font-weight: 800;
+  line-height: 96px;
+}

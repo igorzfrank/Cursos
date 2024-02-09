@@ -1,0 +1,58 @@
+.journey {
+  margin: 120px auto;
+  max-width: 1420px;
+  width: 100%;
+}
+
+.journey h1,
+.journey strong {
+  width: 300px;
+  font-weight: 800;
+  line-height: 96px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 32px;
+  margin-top: 120px;
+  background: var(--b1);
+}
+
+.card.right {
+  grid-template-columns: 2fr 1fr;
+}
+
+.card p {
+  color: var(--w);
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 50px 60px;
+}
+
+.badge p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.info {
+  padding: 32px;
+}
+
+.infoTecs {
+  display: flex;
+  flex-shrink: 0;
+  gap: 12px;
+  padding-bottom: 32px;
+}
+
+.card.right .infoTecs {
+  flex-direction: row-reverse;
+}

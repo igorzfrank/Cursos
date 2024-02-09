@@ -1,0 +1,65 @@
+{
+  "nav": [
+    {
+      "id": "about",
+      "text": "Sobre"
+    },
+    {
+      "id": "journey",
+      "text": "Trajetória"
+    },
+    {
+      "id": "project",
+      "text": "Projetos"
+    },
+    {
+      "id": "contact",
+      "text": "Contato"
+    }
+  ],
+  "hero": {
+    "subStrong": "Seja",
+    "sub": " bem vindo(a)",
+    "title": "Acompanhe a Minha ",
+    "titleStrong": "Jornada."
+  },
+  "about": {
+    "title": {
+      "text": "Quem sou ",
+      "strong": "eu",
+      "question": "?"
+    },
+    "slide": [
+      {
+        "firstText": "Prazer, me chamo ",
+        "firstTextStrong": "Igor Frank Moreno!",
+        "secondText": "Sou ",
+        "secondTextStrong": "Desenvolvedor Front-end",
+        "secondTextMore": " formado em Análise e Desenvolvimento de Sistemas na Faculdade Estácio de Sá.",
+        "thirdText": "Já atuo no mercado na área de desenvolvimento a mais de 2 anos, além de ter diversos cursos profissionalizantes na área."
+      },
+      {
+        "firstText": "Sou um musicista por ",
+        "firstTextStrong": "Hobby!",
+        "secondText": "Sei tocar diversos instrumentos, como: ",
+        "secondTextStrong": "\"Guitarra, Violão, Baixo, Ukulele e Teclado\".",
+        "thirdText": "Me considero uma pessoa \"Autodidata\", foi assim que aprendi a tocar todos esses instrumentos. Além de ter uma grande afinidade músical."
+      },
+      {
+        "firstText": "Gosto de me Desafiar e alcançar grandes ",
+        "firstTextStrong": "Objetivos!",
+        "secondText": "Consegui completar a minha primeira ",
+        "secondTextStrong": "Meia Maratona (21km)",
+        "secondTextMore": " com 3 meses de treino!",
+        "thirdText": "Me encontrei novamente fazendo atividades físicas, faço Musculação regularmente e o meu mais novo objetivo é completar a minha primeira ",
+        "thirdTextStrong": "Maratona (42km)."
+      }
+    ]
+  },
+  "journey": {
+    "title": {
+      "text": "Minha ",
+      "strong": "Trajetória"
+    }
+  }
+}

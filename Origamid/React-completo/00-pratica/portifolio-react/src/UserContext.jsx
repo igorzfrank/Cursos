@@ -16,7 +16,11 @@ export const UseStorage = ({ children }) => {
     }
   }, [lang]);
 
-  return <UserContext.Provider value={lang}>{children}</UserContext.Provider>;
+  return (
+    <UserContext.Provider value={{ lang, data, setLang }}>
+      {children}
+    </UserContext.Provider>
+  );
 };
 
 export default UserContext;

@@ -58,8 +58,26 @@ input {
 
 a {
   text-decoration: none;
+  color: var(--w);
+  cursor: pointer;
 }
 
 .border {
-    border: 1px solid var(--p3);
+  border: 1px solid var(--p3);
+}
+
+h1 {
+  font-family: var(--outfit);
+  color: var(--w);
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: var(--poppins);
+  color: var(--w);
+}
+
+strong {
+  color: var(--p3);
 }

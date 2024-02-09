@@ -1,0 +1,25 @@
+.buttonContent {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 1s alternate-reverse infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: translateX(-50%) translateY(-5px);
+  }
+  to {
+    transform: translateX(-50%) translateY(5px);
+  }
+}
+
+.buttonContent svg > * {
+  transition: 0.3s;
+  fill: var(--w);
+}
+
+.buttonContent:hover svg > * {
+  fill: var(--p3);
+}

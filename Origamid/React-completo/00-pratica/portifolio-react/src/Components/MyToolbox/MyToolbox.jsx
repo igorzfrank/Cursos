@@ -2,6 +2,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import "./MyToolbox.css";
 import UserContext from "../../UserContext";
+import { Fade } from "react-awesome-reveal";
 
 const MyToolbox = () => {
   const { data } = React.useContext(UserContext);
@@ -23,18 +24,24 @@ const MyToolbox = () => {
     <Element name="toolbox">
       <section className="myToolBox">
         <div className="myContianer">
+          {/* <Fade direction="left" duration={1500}> */}
           <div className="toolBox">
-            {tec.map((img, i) => (
-              <img key={i} src={img} />
-            ))}
+            <Fade cascade damping={0.2}>
+              {tec.map((img, i) => (
+                <img key={i} src={img} />
+              ))}
+            </Fade>
           </div>
-          <h1 className="toolTitle">
-            <strong>
-              {data.toolbox.titleStrong}
-              <br></br>
-            </strong>
-            {data.toolbox.title}
-          </h1>
+          {/* </Fade> */}
+          <Fade direction="right" duration={2000}>
+            <h1 className="toolTitle">
+              <strong>
+                {data.toolbox.titleStrong}
+                <br></br>
+              </strong>
+              {data.toolbox.title}
+            </h1>
+          </Fade>
         </div>
       </section>
     </Element>

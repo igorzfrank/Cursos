@@ -7,10 +7,9 @@ import ButtonLang from "../ButtonLang/ButtonLang";
 import useMedia from "../../Hooks/useMedia";
 import Menu from "../../assets/ico/ico-menu.svg?react";
 import MenuClose from "../../assets/ico/ico-close.svg?react";
+import { Fade } from "react-awesome-reveal";
 
 const Navbar = () => {
-  const [menu, setMenu] = React.useState(false);
-
   const mobile = useMedia("(max-width: 760px)");
 
   const { data } = React.useContext(UserContext);
@@ -26,7 +25,9 @@ const Navbar = () => {
   }
   return (
     <header className="header">
-      <Logo />
+      <Fade direction="left">
+        <Logo />
+      </Fade>
       {mobile && (
         <button className="openBtn" onClick={handleClick}>
           <Menu /> Menu
@@ -38,21 +39,25 @@ const Navbar = () => {
             <MenuClose />
           </button>
         )}
-        {data.nav.map((link) => (
-          <Link
-            key={link.id}
-            to={link.id}
-            activeClass="is-active"
-            spy={true}
-            smooth={true}
-            offset={0}
-            onClick={handleMenu}
-          >
-            {link.text}
-          </Link>
-        ))}
+        <Fade cascade damping={0.1} direction="down">
+          {data.nav.map((link) => (
+            <Link
+              key={link.id}
+              to={link.id}
+              activeClass="is-active"
+              spy={true}
+              smooth={true}
+              offset={50}
+              onClick={handleMenu}
+            >
+              {link.text}
+            </Link>
+          ))}
+        </Fade>
       </nav>
-      <ButtonLang />
+      <Fade direction="right">
+        <ButtonLang />
+      </Fade>
     </header>
   );
 };

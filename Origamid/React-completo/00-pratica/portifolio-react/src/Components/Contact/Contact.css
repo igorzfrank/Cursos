@@ -30,6 +30,7 @@
 }
 
 .contactLinks a svg > * {
+  transition: 0.3s ease-in-out;
   fill: var(--p5);
 }
 

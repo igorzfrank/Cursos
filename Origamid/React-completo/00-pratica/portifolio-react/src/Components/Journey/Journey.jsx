@@ -5,6 +5,7 @@ import UserContext from "../../UserContext";
 import LogoHappy from "../../assets/lgo/lgo-happy.png";
 import LogoDot from "../../assets/lgo/lgo-dot.png";
 import Accordion from "../Accordion/Accordion";
+import { Fade } from "react-awesome-reveal";
 
 const Journey = () => {
   const { data } = React.useContext(UserContext);
@@ -34,44 +35,50 @@ const Journey = () => {
   return (
     <Element name="journey">
       <section className="journey">
-        <h1>
-          {data.journey.title.text}
-          <strong>{data.journey.title.strong}</strong>
-        </h1>
-        <div className="card border">
-          <div className="badge">
-            <img src={LogoHappy} />
-            <p>{data.journey.card[0].timeline}</p>
-          </div>
-          <div className="info">
-            <div className="infoTecs">
-              {tecHappy.map((img, i) => (
-                <img key={i} src={img}></img>
-              ))}
+        <Fade direction="left" duration={1000}>
+          <h1>
+            {data.journey.title.text}
+            <strong>{data.journey.title.strong}</strong>
+          </h1>
+        </Fade>
+        <Fade direction="right" duration={2000}>
+          <div className="card border">
+            <div className="badge">
+              <img src={LogoHappy} />
+              <p>{data.journey.card[0].timeline}</p>
             </div>
-            <Accordion
-              activityList={data.journey.card[0].activities.list}
-              achievementsList={data.journey.card[0].achievements.list}
-            />
-          </div>
-        </div>
-        <div className="card right border">
-          <div className="info">
-            <div className="infoTecs">
-              {tecDot.map((img, i) => (
-                <img key={i} src={img}></img>
-              ))}
+            <div className="info">
+              <div className="infoTecs">
+                {tecHappy.map((img, i) => (
+                  <img key={i} src={img}></img>
+                ))}
+              </div>
+              <Accordion
+                activityList={data.journey.card[0].activities.list}
+                achievementsList={data.journey.card[0].achievements.list}
+              />
             </div>
-            <Accordion
-              activityList={data.journey.card[1].activities.list}
-              achievementsList={data.journey.card[1].achievements.list}
-            />
           </div>
-          <div className="badge">
-            <img src={LogoDot} />
-            <p>{data.journey.card[1].timeline}</p>
+        </Fade>
+        <Fade direction="left" duration={2000}>
+          <div className="card right border">
+            <div className="info">
+              <div className="infoTecs">
+                {tecDot.map((img, i) => (
+                  <img key={i} src={img}></img>
+                ))}
+              </div>
+              <Accordion
+                activityList={data.journey.card[1].activities.list}
+                achievementsList={data.journey.card[1].achievements.list}
+              />
+            </div>
+            <div className="badge">
+              <img src={LogoDot} />
+              <p>{data.journey.card[1].timeline}</p>
+            </div>
           </div>
-        </div>
+        </Fade>
       </section>
     </Element>
   );

@@ -13,7 +13,7 @@
       "text": "Ferramentas"
     },
     {
-      "id": "project",
+      "id": "projects",
       "text": "Projetos"
     },
     {
@@ -127,7 +127,7 @@
       {
         "id": 1,
         "project": "WorshipPads",
-        "description": "Site aonde você pode alterar os tipos de Pad's e os seus tipos Tonalidades.",
+        "description": " é uma ferramenta poderosa para músicos e produtores que desejam criar atmosferas sonoras envolventes e inspiradoras, especialmente adequadas para uso em contextos religiosos, como igrejas e espaços de adoração. Este aplicativo oferece uma ampla gama de recursos para personalização, permitindo que os usuários ajustem o tom e o tipo de som do teclado conforme sua preferência e necessidade.",
         "links": [
           {
             "id": "deploy",
@@ -140,6 +140,25 @@
           {
             "id": "figma",
             "link": "https://www.figma.com/file/LiqmvBRU2giqNmx32rMAP7/worshipPads?type=design&node-id=0-1&mode=design&t=DmhNEZWh8PiBTAYe-0"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "project": "Catgram",
+        "description": " é um paraíso para os amantes de gatos, oferecendo uma coleção interminável de imagens adoráveis desses felinos encantadores. Alimentado por uma API, este site permite que os usuários naveguem por uma infinidade de fotos de gatos fofos, proporcionando uma experiência cativante e divertida a cada clique.",
+        "links": [
+          {
+            "id": "deploy",
+            "link": "https://mycatlog.vercel.app/"
+          },
+          {
+            "id": "code",
+            "link": "https://github.com/igorzfrank/catlog"
+          },
+          {
+            "id": "figma",
+            "link": "https://www.figma.com/file/8AWX7Jfbey5XaEOntpwbDp/catlog?type=design&node-id=0%3A1&mode=design&t=gwL9kr67iJa7IsQE-1"
           }
         ]
       }

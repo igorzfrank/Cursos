@@ -9,10 +9,11 @@ import ExternalLink from "../../assets/ico/ico-link.svg?react";
 const Card = ({
   img,
   html,
-  css,
+  CSS,
   javascript,
   jquery,
   react,
+  project,
   description,
   links,
 }) => {
@@ -22,20 +23,25 @@ const Card = ({
       <div className="cardProjectContent">
         <div className="tecs">
           {html && <img src={LogoHTML} />}
-          {css && <img src={LogoCSS} />}
+          {CSS && <img src={LogoCSS} />}
           {javascript && <img src={LogoJS} />}
           {react && <img src={LogoReact} />}
         </div>
-        <div className="description">
-          <p>{description}</p>
-        </div>
-        <div className="links">
-          {links.map((link, i) => (
-            <a key={i} href={link.link} target={"_blank"} rel="noreferrer">
-              {link.id}
-              <ExternalLink />
-            </a>
-          ))}
+        <div className="cardContent">
+          <div className="description">
+            <p>
+              <strong>{project}</strong>
+              {description}
+            </p>
+          </div>
+          <div className="links">
+            {links.map((link, i) => (
+              <a key={i} href={link.link} target={"_blank"} rel="noreferrer">
+                {link.id}
+                <ExternalLink />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </div>

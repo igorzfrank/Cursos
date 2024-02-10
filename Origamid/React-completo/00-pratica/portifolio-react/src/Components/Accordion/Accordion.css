@@ -82,3 +82,19 @@
   top: 10px;
   left: -20px;
 }
+
+@media (max-width: 560px) {
+  .accordionTitle {
+    padding: 8px 20px;
+  }
+
+  .accordionTitle h4 {
+    font-size: 14px;
+  }
+  .accordionItem.is-active .accordionContent {
+    padding: 30px 20px 20px 20px;
+  }
+  .accordionContent li {
+    font-size: 14px;
+  }
+}

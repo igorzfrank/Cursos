@@ -63,8 +63,8 @@ const Journey = () => {
               ))}
             </div>
             <Accordion
-              activityList={data.journey.card[0].activities.list}
-              achievementsList={data.journey.card[0].achievements.list}
+              activityList={data.journey.card[1].activities.list}
+              achievementsList={data.journey.card[1].achievements.list}
             />
           </div>
           <div className="badge">

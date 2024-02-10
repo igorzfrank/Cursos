@@ -9,7 +9,11 @@
       "text": "Journey"
     },
     {
-      "id": "project",
+      "id": "toolbox",
+      "text": "Toolbox"
+    },
+    {
+      "id": "projects",
       "text": "Projects"
     },
     {
@@ -91,23 +95,69 @@
           "id": "activities",
           "title": "Activities",
           "list": [
-            "Create and teach Arduino, Construct 3, Unity, Scratch, LEGO, Roblox Studio and Minecraft classes for students.",
-            "Carry out tests and corrections on student projects.",
-            "Search for new teaching methodologies.",
-            "Guide and explain to parents how the projects were being developed.",
-            "Prepare class presentation cases for enrollment conversion."
+            "Implementation of responsive web screens based on prototypes.",
+            "Implementation of visual and interactive resources.",
+            "Application of adjustments and updates to web pages of already implemented courses.",
+            "Monitoring the receipt, development and delivery of projects.",
+            "Alignment of product development with the team, proposing improvements and solutions to problems.",
+            "Carrying out tests on developed applications.",
+            "Review of code implemented by third parties.",
+            "Use of agile methodologies and Kanban system for development."
           ]
         },
         "achievements": {
           "id": "achievements",
           "title": "Achievements",
           "list": [
-            "With my entry into the educational hub, I was able to create complete Arduino class material.",
-            "I managed to publish several students within the itch.io platform.",
-            "I managed to maintain my student retention at a rate of 90%."
+            "Implementation of Style Guides without any adjustment requests from the QA team.",
+            "Project delivery without request for adjustments from the client."
           ]
         }
       }
     ]
+  },
+  "toolbox": {
+    "titleStrong": "My ",
+    "title": "Toolbox"
+  },
+  "projects": {
+    "title": "My",
+    "titleStrong": "Projects",
+    "card": [
+      {
+        "id": 1,
+        "project": "WorshipPads",
+        "description": "Site where you can change the types of Pads and their Tonal types.",
+        "links": [
+          {
+            "id": "deploy",
+            "link": "https://worship-pads.vercel.app/"
+          },
+          {
+            "id": "code",
+            "link": "https://github.com/igorzfrank/worshipPads/tree/main"
+          },
+          {
+            "id": "figma",
+            "link": "https://www.figma.com/file/LiqmvBRU2giqNmx32rMAP7/worshipPads?type=design&node-id=0-1&mode=design&t=DmhNEZWh8PiBTAYe-0"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "contact",
+    "titleStrong": " me"
+  },
+  "footer": {
+    "developer": {
+      "text": "Developed by ",
+      "author": "Igor Frank Moreno."
+    },
+    "rights": {
+      "date": "© 2024 ",
+      "business": "The Web Solution",
+      "allRights": "- All rights reserved"
+    }
   }
 }

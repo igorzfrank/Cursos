@@ -1,0 +1,39 @@
+.projects {
+  padding: 120px 0px;
+}
+
+.projectsContainer {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.projectsTitle {
+  text-align: center;
+  font-weight: 800;
+  line-height: 94px;
+}
+
+@media (max-width: 1024px) {
+  .projectsTitle {
+    line-height: 56px;
+  }
+  .projects {
+    padding: 60px 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .projectsTitle {
+    line-height: 34px;
+  }
+  .projects {
+    padding: 30px 20px;
+  }
+
+  .projectsContainer {
+    margin-top: 30px;
+  }
+}

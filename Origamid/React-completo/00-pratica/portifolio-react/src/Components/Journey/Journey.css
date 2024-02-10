@@ -1,5 +1,6 @@
 .journey {
-  margin: 120px auto;
+  margin: 0px auto;
+  padding: 120px 0px;
   max-width: 1420px;
   width: 100%;
 }
@@ -19,6 +20,10 @@
   background: var(--b1);
 }
 
+.card + .card {
+  margin-top: 80px;
+}
+
 .card.right {
   grid-template-columns: 2fr 1fr;
 }
@@ -32,7 +37,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 20px;
   padding: 50px 60px;
 }
 
@@ -55,4 +60,55 @@
 
 .card.right .infoTecs {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 1440px) {
+  .journey {
+    padding: 120px 20px;
+  }
+
+  .badge {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .journey {
+    padding: 60px 20px;
+  }
+  .journey h1,
+  .journey strong {
+    line-height: 56px;
+  }
+
+  .card {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card.right {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    padding-top: 0px;
+  }
+
+  .infoTecs {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .journey {
+    padding: 30px 20px;
+  }
+
+  .journey h1,
+  .journey strong {
+    line-height: 34px;
+  }
 }

@@ -9,6 +9,10 @@
       "text": "Trajetória"
     },
     {
+      "id": "toolbox",
+      "text": "Ferramentas"
+    },
+    {
       "id": "project",
       "text": "Projetos"
     },
@@ -21,7 +25,7 @@
     "subStrong": "Seja",
     "sub": " bem vindo(a)",
     "title": "Acompanhe a Minha ",
-    "titleStrong": "Jornada."
+    "titleStrong": "Jornada"
   },
   "about": {
     "title": {
@@ -60,6 +64,100 @@
     "title": {
       "text": "Minha ",
       "strong": "Trajetória"
+    },
+    "card": [
+      {
+        "timeline": "Durante o período de 01/2022 até 09/2022 atuei como Instrutor de Robótica e Programação dentro do hub educacional Happy em Florianópolis.",
+        "activities": {
+          "id": "activities",
+          "title": "Atividades",
+          "list": [
+            "Elaborar e ministrar aulas de Arduino, Construct 3, Unity, Scratch, LEGO, Roblox Studio e Minecraft para os alunos.",
+            "Fazer testes e correções nos projetos dos estudantes.",
+            "Buscar novas metodologias de ensino.",
+            "Orientar e explicar para os pais como os projetos estavam sendo desenvolvidos.",
+            "Elaborar cases de apresentação das aulas, para conversão de matriculas."
+          ]
+        },
+        "achievements": {
+          "id": "achievements",
+          "title": "Conquistas",
+          "list": [
+            "Com a minha entrada no hub educacional, consegui elaborar um material completo de aulas de Arduino.",
+            "Consegui realizar publicação de diversos alunos dentro da plataforma itch.io.",
+            "Consegui manter a retenção dos meus alunos em uma taxa de 90%."
+          ]
+        }
+      },
+      {
+        "timeline": "No período de 09/2022 iniciei minha atuação como Estagiário em Desenvolvimento Front-End dentro da empresa DOT Digital Group, aonde estou exercendo a função até o período atual.",
+        "activities": {
+          "id": "activities",
+          "title": "Atividades",
+          "list": [
+            "Implementação de telas web responsivas baseadas em protótipos.",
+            "Implementação de recursos visuais e interativos.",
+            "Aplicação de ajustes e atualizações em páginas web de cursos já implementados.",
+            "Acompanhamento do recebimento, desenvolvimento e entrega de projetos.",
+            "Alinhamento do desenvolvimento do produto com o time propondo melhorias e soluções para os problemas.",
+            "Realização de testes nas aplicações desenvolvidas.",
+            "Revisão de código implementado por terceirizados.",
+            "Utilização de metodologias ágeis e sistema Kanban para o desenvolvimento."
+          ]
+        },
+        "achievements": {
+          "id": "achievements",
+          "title": "Conquistas",
+          "list": [
+            "Implementação de Guias de Estilos sem nenhum pedido de ajuste por parte do time de QA.",
+            "Entrega de projeto sem pedido de ajustes por parte do cliente."
+          ]
+        }
+      }
+    ]
+  },
+  "toolbox": {
+    "titleStrong": "Minha",
+    "title": "Caixa de Ferramentas"
+  },
+  "projects": {
+    "title": "Meus",
+    "titleStrong": "Projetos",
+    "card": [
+      {
+        "id": 1,
+        "project": "WorshipPads",
+        "description": "Site aonde você pode alterar os tipos de Pad's e os seus tipos Tonalidades.",
+        "links": [
+          {
+            "id": "deploy",
+            "link": "https://worship-pads.vercel.app/"
+          },
+          {
+            "id": "code",
+            "link": "https://github.com/igorzfrank/worshipPads/tree/main"
+          },
+          {
+            "id": "figma",
+            "link": "https://www.figma.com/file/LiqmvBRU2giqNmx32rMAP7/worshipPads?type=design&node-id=0-1&mode=design&t=DmhNEZWh8PiBTAYe-0"
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Entre em ",
+    "titleStrong": "Contato"
+  },
+  "footer": {
+    "developer": {
+      "text": "Desenvolvido por ",
+      "author": "Igor Frank Moreno."
+    },
+    "rights": {
+      "date": "© 2024 ",
+      "business": "The Web Solution",
+      "allRights": "- Todos os direitos reservados."
     }
   }
 }

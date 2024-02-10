@@ -14,7 +14,6 @@ import "swiper/css/scrollbar";
 
 const Slide = () => {
   const { data } = React.useContext(UserContext);
-  console.log(data.about.slide[0].firstText);
   return (
     <Swiper
       // install Swiper modules

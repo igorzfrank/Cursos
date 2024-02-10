@@ -1,0 +1,36 @@
+.buttonTop {
+  background: var(--b2);
+  position: fixed;
+  right: 70px;
+  bottom: 40px;
+  padding: 24px 28px;
+  border: 1px solid var(--p3);
+  border-radius: 26px;
+  z-index: 50;
+}
+
+.buttonTop svg {
+  animation: pulse 1s alternate infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .buttonTop {
+    right: 20px;
+    bottom: 40px;
+    padding: 12px 24px;
+    border-radius: 20px;
+  }
+
+  .buttonTop svg {
+    width: 30px;
+  }
+}

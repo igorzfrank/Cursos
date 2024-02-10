@@ -1,0 +1,101 @@
+.cardProject {
+  max-width: 466px;
+  border: 2px solid var(--p5);
+  padding: 0px;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.cardProject .cardImg {
+  width: 100%;
+  transform: scale(1.01);
+}
+
+.cardProjectContent {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tecs {
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  gap: 12px;
+}
+
+.cardProjectContent p {
+  color: var(--w1);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links a {
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  gap: 4px;
+  padding: 10px 20px;
+  border: 1px solid var(--p3);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  border: 1px solid var(--w);
+  background: var(--b3);
+}
+
+@media (max-width: 560px) {
+  .card {
+    margin-top: 30px;
+  }
+
+  .cardProject {
+    max-width: 320px;
+  }
+
+  .badge {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .badge p {
+    font-size: 14px;
+  }
+
+  .cardProjectContent {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .info {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .infoTecs img {
+    height: 15px;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .links a {
+    font-size: 14px;
+    line-height: 14px;
+    width: 100%;
+  }
+
+  .links a svg {
+    width: 24px;
+  }
+}

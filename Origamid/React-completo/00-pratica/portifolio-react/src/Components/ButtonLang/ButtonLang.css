@@ -33,7 +33,7 @@
 
 .buttonLang::before {
   content: "en";
-  color: var(--p1);
+  color: var(--w1);
   font-size: 12px;
   position: absolute;
   right: 8px;
@@ -43,7 +43,7 @@
 
 .buttonLang:hover::before {
   transition: 0.3s;
-  color: var(--w1);
+  color: var(--w);
 }
 
 .buttonLang.is-active::after {

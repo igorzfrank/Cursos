@@ -42,7 +42,7 @@
 
 .slideContent {
   background: var(--b1);
-  width: 500px;
+  max-width: 500px;
   height: 500px;
   border-radius: 32px;
   padding: 72px 40px;
@@ -57,4 +57,57 @@
   color: var(--w);
   font-size: 22px;
   line-height: 1.5;
+}
+
+@media (max-width: 1280px) {
+  .slide {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .slide img {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .slideContent {
+    max-width: 100%;
+    height: auto;
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .aboutTitle {
+    line-height: 56px;
+  }
+  .swiper {
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+  .slideContent p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 200px !important;
+  }
+  .slide {
+    gap: 32px;
+  }
+  .slide img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .slideContent {
+    padding: 20px;
+  }
+
+  .slideContent p {
+    font-size: 14px;
+  }
 }

@@ -126,6 +126,21 @@
     "card": [
       {
         "id": 1,
+        "project": "TWS - The Web Solution",
+        "description": " é uma empresa focada no desenvolvimento de soluções Web's para empresas, fazendo com que as empresas estejam presentes na Web.",
+        "links": [
+          {
+            "id": "deploy",
+            "link": "https://www.twsdevweb.com.br/"
+          },
+          {
+            "id": "figma",
+            "link": "https://www.figma.com/file/i690SpjIdXAxt3eqGkXeCP/TWS?type=design&node-id=27%3A226&mode=design&t=Hb9V3p4PaIcXNJoA-1"
+          }
+        ]
+      },
+      {
+        "id": 2,
         "project": "WorshipPads",
         "description": " é uma ferramenta poderosa para músicos e produtores que desejam criar atmosferas sonoras envolventes e inspiradoras, especialmente adequadas para uso em contextos religiosos, como igrejas e espaços de adoração. Este aplicativo oferece uma ampla gama de recursos para personalização, permitindo que os usuários ajustem o tom e o tipo de som do teclado conforme sua preferência e necessidade.",
         "links": [
@@ -144,7 +159,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "project": "Catgram",
         "description": " é um paraíso para os amantes de gatos, oferecendo uma coleção interminável de imagens adoráveis desses felinos encantadores. Alimentado por uma API, este site permite que os usuários naveguem por uma infinidade de fotos de gatos fofos, proporcionando uma experiência cativante e divertida a cada clique.",
         "links": [

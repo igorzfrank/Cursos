@@ -30,6 +30,15 @@ body {
   overflow-x: hidden;
 }
 
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(./assets/img/img-real.png) url(./assets/img/img-disney.png);
+}
+
 h1,
 h2,
 h3,

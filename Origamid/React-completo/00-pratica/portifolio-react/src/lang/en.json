@@ -126,6 +126,21 @@
     "card": [
       {
         "id": 1,
+        "project": "TWS - The Web Solution",
+        "description": " is a company focused on developing Web solutions for companies, ensuring that companies are present on the Web.",
+        "links": [
+          {
+            "id": "deploy",
+            "link": "https://www.twsdevweb.com.br/"
+          },
+          {
+            "id": "figma",
+            "link": "https://www.figma.com/file/i690SpjIdXAxt3eqGkXeCP/TWS?type=design&node-id=27%3A226&mode=design&t=Hb9V3p4PaIcXNJoA-1"
+          }
+        ]
+      },
+      {
+        "id": 2,
         "project": "WorshipPads",
         "description": " is a powerful tool for musicians and producers who want to create immersive and inspiring sonic atmospheres, especially suitable for use in religious contexts such as churches and places of worship. This application offers a wide range of customization features, allowing users to adjust the tone and type of keyboard sound according to their preferences and needs.",
         "links": [
@@ -144,7 +159,7 @@
         ]
       },
       {
-        "id": 2,
+        "id": 3,
         "project": "Catgram",
         "description": " is a paradise for cat lovers, offering an endless collection of adorable images of these charming felines. Powered by an API, this website allows users to browse through a multitude of cute cat photos, providing a captivating and enjoyable experience with every click.",
         "links": [

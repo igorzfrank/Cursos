@@ -6,30 +6,46 @@ import LogoHappy from "../../assets/lgo/lgo-happy.png";
 import LogoDot from "../../assets/lgo/lgo-dot.png";
 import Accordion from "../Accordion/Accordion";
 import { Fade } from "react-awesome-reveal";
+import LogoConstruct from "../../assets/lgo/lgo-construct.png";
+import LogoUnity from "../../assets/lgo/lgo-unity.png";
+import LogoLego from "../../assets/lgo/lgo-lego.png";
+import LogoScratch from "../../assets/lgo/lgo-scratch.png";
+import LogoMine from "../../assets/lgo/lgo-mine.png";
+import LogoArduino from "../../assets/lgo/lgo-arduino.png";
+import LogoRoblox from "../../assets/lgo/lgo-roblox.png";
+import LogoVite from "../../assets/lgo/lgo-vite.png";
+import LogoGulp from "../../assets/lgo/lgo-gulp.png";
+import LogoBitbucket from "../../assets/lgo/lgo-bitbucket.png";
+import LogoGit from "../../assets/lgo/lgo-git.png";
+import LogoProject from "../../assets/lgo/lgo-project-lego.png";
+import LogoJquery from "../../assets/lgo/lgo-jquery.png";
+import LogoJS from "../../assets/lgo/lgo-javascript.png";
+import LogoCSS from "../../assets/lgo/lgo-css.png";
+import LogoHTML from "../../assets/lgo/lgo-html.png";
 
 const Journey = () => {
   const { data } = React.useContext(UserContext);
 
   const tecHappy = [
-    "../src/assets/lgo/lgo-construct.png",
-    "../src/assets/lgo/lgo-unity.png",
-    "../src/assets/lgo/lgo-lego.png",
-    "../src/assets/lgo/lgo-scratch.png",
-    "../src/assets/lgo/lgo-mine.png",
-    "../src/assets/lgo/lgo-arduino.png",
-    "../src/assets/lgo/lgo-roblox.png",
+    LogoConstruct,
+    LogoUnity,
+    LogoLego,
+    LogoScratch,
+    LogoMine,
+    LogoArduino,
+    LogoRoblox,
   ];
 
   const tecDot = [
-    "../src/assets/lgo/lgo-vite.png",
-    "../src/assets/lgo/lgo-gulp.png",
-    "../src/assets/lgo/lgo-bitbucket.png",
-    "../src/assets/lgo/lgo-git.png",
-    "../src/assets/lgo/lgo-project-lego.png",
-    "../src/assets/lgo/lgo-jquery.png",
-    "../src/assets/lgo/lgo-javascript.png",
-    "../src/assets/lgo/lgo-css.png",
-    "../src/assets/lgo/lgo-html.png",
+    LogoVite,
+    LogoGulp,
+    LogoBitbucket,
+    LogoGit,
+    LogoProject,
+    LogoJquery,
+    LogoJS,
+    LogoCSS,
+    LogoHTML,
   ];
 
   return (
@@ -49,9 +65,11 @@ const Journey = () => {
             </div>
             <div className="info">
               <div className="infoTecs">
-                {tecHappy.map((img, i) => (
-                  <img key={i} src={img}></img>
-                ))}
+                <Fade cascade damping={0.2} delay={1000} direction="up">
+                  {tecHappy.map((img, i) => (
+                    <img key={i} src={img}></img>
+                  ))}
+                </Fade>
               </div>
               <Accordion
                 activityList={data.journey.card[0].activities.list}
@@ -64,9 +82,11 @@ const Journey = () => {
           <div className="card right border">
             <div className="info">
               <div className="infoTecs">
-                {tecDot.map((img, i) => (
-                  <img key={i} src={img}></img>
-                ))}
+                <Fade cascade damping={0.2} delay={1000} direction="up">
+                  {tecDot.map((img, i) => (
+                    <img key={i} src={img}></img>
+                  ))}
+                </Fade>
               </div>
               <Accordion
                 activityList={data.journey.card[1].activities.list}

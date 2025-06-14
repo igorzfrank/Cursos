@@ -4,13 +4,15 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Cursos.iml" filepath="$PROJECT_DIR$/.idea/Cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/JFrame/JFrame.iml" filepath="$PROJECT_DIR$/Java/Desafios/JFrame/JFrame.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java/Desafios/Teste/Teste.iml" filepath="$PROJECT_DIR$/Java/Desafios/Teste/Teste.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-01/javaChalenge-01.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-01/javaChalenge-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-02/javaChalenge-02.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-02/javaChalenge-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-03/javaChalenge-03.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-03/javaChalenge-03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-04/javaChalenge-04.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-04/javaChalenge-04.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-05/javaChalenge-05.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-05/javaChalenge-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Conceitos/mathOperations/mathOperations.iml" filepath="$PROJECT_DIR$/Java/Conceitos/mathOperations/mathOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Conceitos/stringsAndMethods/stringsAndMethods.iml" filepath="$PROJECT_DIR$/Java/Conceitos/stringsAndMethods/stringsAndMethods.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/to-do-list/to-do-list.iml" filepath="$PROJECT_DIR$/Java/Desafios/to-do-list/to-do-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Conceitos/typeCasting/typeCasting.iml" filepath="$PROJECT_DIR$/Java/Conceitos/typeCasting/typeCasting.iml" />
     </modules>
   </component>
 </project>

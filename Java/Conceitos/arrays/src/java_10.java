@@ -24,5 +24,7 @@ public class java_10 {
         }
 
         System.out.println("Encerrando...");
+
+        scanner.close();
     }
 }

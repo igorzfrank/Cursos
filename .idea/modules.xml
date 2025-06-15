@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Cursos.iml" filepath="$PROJECT_DIR$/.idea/Cursos.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/JFrame/JFrame.iml" filepath="$PROJECT_DIR$/Java/Desafios/JFrame/JFrame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java/Conceitos/arrays/arrays.iml" filepath="$PROJECT_DIR$/Java/Conceitos/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-01/javaChalenge-01.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-01/javaChalenge-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-02/javaChalenge-02.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-02/javaChalenge-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java/Desafios/javaChalenge-03/javaChalenge-03.iml" filepath="$PROJECT_DIR$/Java/Desafios/javaChalenge-03/javaChalenge-03.iml" />

@@ -58,6 +58,6 @@ class Eletronico extends Produto {
     }
 
     public void exibirInformacoes() {
-        System.out.println("Produto: " + getNome() + " - Preco: " + getPreco() + " - Garantia: " +getGarantia() + " meses!");
+        System.out.println("Produto: " + getNome() + " - Preco: " + getPreco() + " - Garantia: " + getGarantia() + " meses!");
     }
 }

@@ -9,6 +9,23 @@ package Java.Conceitos.finalKeyword;
 
 public class java_04 {
     public static void main(String[] args) {
+        Aluno aluno = new Aluno("010204");
+        System.out.println("A matricula do aluno é " + aluno.getMatricula());
+    }
+}
 
+class Aluno {
+    private final String matricula;
+
+    Aluno(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    void setMatricula(String matricula) {
+        // this.matricula = matricula; - Não pode ser alterado.
     }
 }

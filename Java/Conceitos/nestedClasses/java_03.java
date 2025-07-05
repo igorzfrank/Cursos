@@ -8,6 +8,20 @@ package Java.Conceitos.nestedClasses;
 
 public class java_03 {
     public static void main(String[] args) {
+        Relatorio relatorio = new Relatorio();
+        relatorio.gerar();
+    }
+}
 
+class Relatorio {
+    void gerar() {
+        class Cabecalho {
+            void mostrar() {
+                System.out.println("Relatório 2025");
+            }
+        }
+
+        Cabecalho cabecalho = new Cabecalho();
+        cabecalho.mostrar();
     }
 }

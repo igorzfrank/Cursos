@@ -15,7 +15,7 @@
         }
 
         if(empty($errorMensage)) {
-            $sql = 'INSERT INTO tarefa (usuario_id, titulo) VALUE (:usuario_id, :titulo)';
+            $sql = 'INSERT INTO tarefas (usuario_id, titulo) VALUE (:usuario_id, :titulo)';
 
             $stmt = $pdo->prepare($sql);
             $stmt->bindValue(':usuario_id', $userId);
@@ -23,6 +23,8 @@
             $stmt->execute();
 
             $sucessMessage = 'Tarefa cadastrada com sucesso!';
+            header('Location: dashboard.php?sucuess');
+            exit;
         }
     }
 
@@ -59,7 +61,9 @@
     <p>Não há tarefas registradas.</p>
     <?php else : ?>
     <?php foreach ($tarefas as $tarefa) : ?>
-    <p><?= $tarefa ?></p>
+    <p>
+        <?= $tarefa['titulo'] ?><a href="../config/delete.php?id=<?= $tarefa['id'] ?>">Excluir</a>
+    </p>
     <?php endforeach?>
     <?php endif ?>
 </body>

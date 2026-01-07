@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("../fonts/Satoshi-Light.woff2") format("woff2"),
+    url("../fonts/Satoshi-Light.woff") format("woff"),
+    url("../fonts/Satoshi-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-LightItalic";
+  src: url("../fonts/Satoshi-LightItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-LightItalic.woff") format("woff"),
+    url("../fonts/Satoshi-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("../fonts/Satoshi-Regular.woff2") format("woff2"),
+    url("../fonts/Satoshi-Regular.woff") format("woff"),
+    url("../fonts/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Italic";
+  src: url("../fonts/Satoshi-Italic.woff2") format("woff2"),
+    url("../fonts/Satoshi-Italic.woff") format("woff"),
+    url("../fonts/Satoshi-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("../fonts/Satoshi-Medium.woff2") format("woff2"),
+    url("../fonts/Satoshi-Medium.woff") format("woff"),
+    url("../fonts/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-MediumItalic";
+  src: url("../fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-MediumItalic.woff") format("woff"),
+    url("../fonts/Satoshi-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("../fonts/Satoshi-Bold.woff2") format("woff2"),
+    url("../fonts/Satoshi-Bold.woff") format("woff"),
+    url("../fonts/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BoldItalic";
+  src: url("../fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-BoldItalic.woff") format("woff"),
+    url("../fonts/Satoshi-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("../fonts/Satoshi-Black.woff2") format("woff2"),
+    url("../fonts/Satoshi-Black.woff") format("woff"),
+    url("../fonts/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-BlackItalic";
+  src: url("../fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+    url("../fonts/Satoshi-BlackItalic.woff") format("woff"),
+    url("../fonts/Satoshi-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+:root {
+  --b1: #000000;
+  --b2: #333333;
+  --b3: #777777;
+  --b4: #acacac;
+  --b5: #dad9d9;
+  --w1: #ffffff;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+h1,
+h2 {
+  font-family: "Smooch Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+}
+
+p {
+  font-family: "Satoshi-Regular", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: "Satoshi-black", sans-serif;
+  font-size: 26px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  background-color: var(--b1);
+  color: var(--w1);
+  padding: 20px 0px;
+  border-radius: 20px;
+}
+
+.btn:hover {
+  color: var(--b3);
+  background-color: var(--b5);
+}
+
+.btn.btn-dashed {
+  border: 3px dashed var(--b1);
+  background-color: transparent;
+  color: var(--b1);
+}
+
+.btn.btn-dashed:hover {
+  border: 3px dashed var(--b5);
+  color: var(--b3);
+}
+
+.btn.btn-secondary {
+  border: 3px solid var(--b1);
+  background-color: var(--w1);
+  color: var(--b1);
+}
+
+.btn.btn-secondary:hover {
+  border: 3px solid var(--b5);
+  color: var(--b3);
+}
+
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container {
+  max-width: 612px;
+}
+
+.home .container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.home .container h1 {
+  font-size: 106px;
+  color: var(--b1);
+  text-align: center;
+}
+
+.home .container h1 span,
+.home .container h2 span {
+  color: var(--b3);
+}
+
+.home .container h2 {
+  font-size: 86px;
+  color: var(--b1);
+  text-align: center;
+}
+
+.home .container p {
+  font-size: 24px;
+  text-align: center;
+  color: var(--b3);
+}
+
+.home .container .buttons {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login h2 {
+  font-size: 82px;
+}
+
+.login .container {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border: 3px dashed var(--b1);
+  border-radius: 20px;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.login .container form label {
+  font-family: "Satoshi-light", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--b3);
+}
+
+.login .container form input {
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  background-color: var(--b5);
+  border-radius: 10px;
+  border: none;
+  color: var(--b4);
+}

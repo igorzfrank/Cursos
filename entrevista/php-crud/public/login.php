@@ -36,19 +36,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área de Login</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 
-<body>
-    <h2>Login</h2>
-    <form action="" method="POST">
-        <input type="email" name="email" placeholder="Digite o seu e-mail:">
-        <input type="password" name="password" placeholder="Digite a sua senha:">
-        <button type="submit">Entrar</button>
-    </form>
-    <a href="cadastro.php">Criar conta</a>
-    <?php if ($error) : ?>
-    <p><?= $error ?></p>
-    <?php endif ?>
+<body class="login">
+    <div class="container">
+        <h2>Login</h2>
+        <form action="" method="POST">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite o seu e-mail:">
+            <label for="password">Senha</label>
+            <input type="password" name="password" placeholder="Digite a sua senha:">
+            <?php if ($error) : ?>
+            <p><?= $error ?></p>
+            <?php endif ?>
+            <button class="btn" type="submit">LOGIN</button>
+            <a class="btn btn-secondary" href="cadastro.php">CRIAR CONTA</a>
+        </form>
+        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+    </div>
 </body>
 
 </html>

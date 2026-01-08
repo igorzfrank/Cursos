@@ -66,10 +66,15 @@
         </div>
         <?php else : ?>
         <?php foreach ($tarefas as $tarefa) : ?>
-        <div class="tarefa" data-id="<?= $tarefa['id'] ?>">
+        <div class="tarefa 
+            <?php if($tarefa['concluido'] == 1) : ?>
+                <?= 'is-checked' ?>
+            <?php endif ?>
+        " data-id="<?= $tarefa['id'] ?>">
             <p>
-                <?= $tarefa['titulo'], $tarefa['concluido']?>
+                <?= $tarefa['titulo']?>
             </p>
+            <a class="edit none" href="../config/edit.php?id=<?= $tarefa['id'] ?>">Editar</a>
             <a href="../config/delete.php?id=<?= $tarefa['id'] ?>"><img src="../assets/img/trash.svg" alt=""></a>
         </div>
         <?php endforeach?>

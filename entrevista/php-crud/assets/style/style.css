@@ -133,6 +133,10 @@ a {
   text-decoration: none;
 }
 
+.none {
+  display: none !important;
+}
+
 .btn {
   font-family: "Satoshi-black", sans-serif;
   font-size: 26px;

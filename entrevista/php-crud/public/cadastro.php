@@ -70,27 +70,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 
-<body>
-    <form action="" method="POST">
-        <input type="text" name="user" placeholder="Nome">
-        <input type="email" name="email" placeholder="E-mail">
-        <input type="password" name="password" placeholder="Senha">
-        <input type="password" name="passwordConfirm" placeholder="Confirme a senha">
-        <button type="submit">Cadastrar</button>
-    </form>
-    <a href="login.php">Login</a>
-    <?php if ($errors) : ?>
-    <ul>
-        <?php foreach($errors as $error) : ?>
-        <li><?= $error ?></li>
-        <?php endforeach ?>
-    </ul>
-    <?php endif ?>
-    <?php if ($sucess) : ?>
-    <p><?= $sucess ?></p>
-    <?php endif ?>
+<body class="cadastro">
+    <div class="container">
+        <h2>Crie sua conta</h2>
+        <form action="" method="POST">
+            <input type="text" name="user" placeholder="Nome">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="password" name="password" placeholder="Senha">
+            <input type="password" name="passwordConfirm" placeholder="Confirme a senha">
+            <button class="btn" type="submit">CRIAR CONTA</button>
+            <a class="btn btn-secondary" href="login.php">LOGIN</a>
+        </form>
+        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+        <?php if ($errors) : ?>
+        <ul>
+            <?php foreach($errors as $error) : ?>
+            <li><?= $error ?></li>
+            <?php endforeach ?>
+        </ul>
+        <?php endif ?>
+        <?php if ($sucess) : ?>
+        <p><?= $sucess ?></p>
+        <?php endif ?>
+    </div>
 </body>
 
 </html>

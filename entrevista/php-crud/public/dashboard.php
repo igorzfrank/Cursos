@@ -43,29 +43,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 
-<body>
-    <h2>Dashboard</h2>
+<body class="dashboard">
+    <div class="menu">
+        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+        <a href="../config/logout.php">Desconectar <img src="../assets/img/logout.svg" alt=""></a>
+    </div>
+    <div class="container">
 
-    <p>Bem-vindo, <?= $_SESSION['user_name'] ?></p>
+        <h2>Olá, <?= $_SESSION['user_name'] ?>!</h2>
 
-    <a href="../config/logout.php">Sair</a>
+        <form action="" method="POST">
+            <input type="text" name="tarefa" placeholder="Nova tarefa...">
+            <button class="btn btn-secondary" type="submit">CRIAR</button>
+        </form>
 
-    <form action="" method="POST">
-        <input type="text" name="tarefa" placeholder="Nova tarefa...">
-        <button type="submit">Criar</button>
-    </form>
+        <?php if (empty($tarefas)) : ?>
+        <div class="tarefa">
+            <p>Não há tarefas registradas.</p>
+        </div>
+        <?php else : ?>
+        <?php foreach ($tarefas as $tarefa) : ?>
+        <div class="tarefa" data-id="<?= $tarefa['id'] ?>">
+            <p>
+                <?= $tarefa['titulo'], $tarefa['concluido']?>
+            </p>
+            <a href="../config/delete.php?id=<?= $tarefa['id'] ?>"><img src="../assets/img/trash.svg" alt=""></a>
+        </div>
+        <?php endforeach?>
+        <?php endif ?>
+    </div>
 
-    <?php if (empty($tarefas)) : ?>
-    <p>Não há tarefas registradas.</p>
-    <?php else : ?>
-    <?php foreach ($tarefas as $tarefa) : ?>
-    <p>
-        <?= $tarefa['titulo'] ?><a href="../config/delete.php?id=<?= $tarefa['id'] ?>">Excluir</a>
-    </p>
-    <?php endforeach?>
-    <?php endif ?>
+    <script type="module" src="../assets/js/main.js"></script>
 </body>
 
 </html>

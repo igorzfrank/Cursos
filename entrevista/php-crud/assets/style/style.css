@@ -172,7 +172,9 @@ a {
   color: var(--b3);
 }
 
-.home {
+.home,
+.login,
+.cadastro {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -221,19 +223,13 @@ a {
   gap: 20px;
 }
 
-.login {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login h2 {
+.login h2,
+.cadastro h2 {
   font-size: 82px;
 }
 
-.login .container {
+.login .container,
+.cadastro .container {
   max-width: 600px;
   width: 100%;
   display: flex;
@@ -241,7 +237,8 @@ a {
   align-items: center;
 }
 
-.login .container form {
+.login .container form,
+.cadastro .container form {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -252,14 +249,16 @@ a {
   margin: 20px 0;
 }
 
-.login .container form label {
+.login .container form label,
+.cadastro .container form label {
   font-family: "Satoshi-light", sans-serif;
   font-size: 24px;
   line-height: 1;
   color: var(--b3);
 }
 
-.login .container form input {
+.login .container form input,
+.cadastro .container form input {
   font-family: "Satoshi-Black", sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -267,4 +266,93 @@ a {
   border-radius: 10px;
   border: none;
   color: var(--b4);
+}
+
+.dashboard h2 {
+  font-size: 42px;
+}
+
+.dashboard .menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 120px;
+  border-bottom: 3px dashed var(--b5);
+}
+
+.dashboard a {
+  font-family: "Satoshi-Light", sans-serif;
+  color: var(--b1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.dashboard a:hover {
+  color: var(--b3);
+  gap: 4px;
+}
+
+.dashboard a:hover img {
+  opacity: 0.3;
+}
+
+.dashboard .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dashboard form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.dashboard form input {
+  width: 100%;
+  font-family: "Satoshi-Black", sans-serif;
+  font-size: 18px;
+  padding: 12px 27px;
+  background-color: var(--b5);
+  border-radius: 20px;
+  border: none;
+  color: var(--b4);
+}
+
+.dashboard form .btn {
+  font-size: 16px;
+  line-height: 16px;
+  max-width: 140px;
+  padding: 5px;
+}
+
+.dashboard .tarefa {
+  width: 100%;
+  padding: 12px 46px;
+  border-radius: 30px;
+  border: 3px dashed var(--b1);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dashboard .tarefa:hover {
+  border: 3px dashed var(--b5);
+  color: var(--b5);
+}
+
+.dashboard .tarefa.is-checked {
+  border: 3px dashed var(--b5);
+  color: var(--b5);
+}
+
+.dashboard .tarefa img:hover {
+  opacity: 0.3;
 }

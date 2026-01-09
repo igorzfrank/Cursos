@@ -84,7 +84,9 @@
             <button class="btn" type="submit">CRIAR CONTA</button>
             <a class="btn btn-secondary" href="login.php">LOGIN</a>
         </form>
-        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+        <a href="../index.php">
+            <img class="logo" src="../assets/img/logo.svg" alt="Logo MyTask's">
+        </a>
         <?php if ($errors) : ?>
         <ul>
             <?php foreach($errors as $error) : ?>

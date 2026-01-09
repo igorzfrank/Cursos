@@ -123,10 +123,15 @@ h2 {
   line-height: 1;
 }
 
-p {
+p,
+li {
   font-family: "Satoshi-Regular", sans-serif;
   font-weight: 400;
   line-height: 1.5;
+}
+
+li {
+  margin-left: 20px;
 }
 
 a {
@@ -139,13 +144,13 @@ a {
 
 .btn {
   font-family: "Satoshi-black", sans-serif;
-  font-size: 26px;
+  font-size: 22px;
   cursor: pointer;
   width: 100%;
   text-align: center;
   background-color: var(--b1);
   color: var(--w1);
-  padding: 20px 0px;
+  padding: 10px 0px;
   border-radius: 20px;
 }
 
@@ -179,11 +184,14 @@ a {
 .home,
 .login,
 .cadastro {
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.home {
+  position: relative;
 }
 
 .home .container {
@@ -227,14 +235,66 @@ a {
   gap: 20px;
 }
 
+.home .modal .closeModal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.home .modal {
+  width: 600px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background: var(--w1);
+  padding: 90px 20px 50px 20px;
+  border: 3px dashed var(--b1);
+  border-radius: 20px;
+  /* display: none; */
+  opacity: 0;
+}
+
+.home .modal.is-active {
+  /* display: initial; */
+  top: 50%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.home .modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home .modal .logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.home .closeModal:hover {
+  opacity: 0.3;
+}
+
+.home .btn {
+  font-size: 26px;
+  padding: 20px 0px;
+}
+
 .login h2,
 .cadastro h2 {
-  font-size: 82px;
+  font-size: 76px;
 }
 
 .login .container,
 .cadastro .container {
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -246,17 +306,17 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  padding: 30px 20px;
   border: 3px dashed var(--b1);
   border-radius: 20px;
-  gap: 20px;
-  margin: 20px 0;
+  gap: 15px;
+  margin: 15px 0;
 }
 
 .login .container form label,
 .cadastro .container form label {
   font-family: "Satoshi-light", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1;
   color: var(--b3);
 }
@@ -264,7 +324,7 @@ a {
 .login .container form input,
 .cadastro .container form input {
   font-family: "Satoshi-Black", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   padding: 15px;
   background-color: var(--b5);
   border-radius: 10px;
@@ -286,7 +346,7 @@ a {
   border-bottom: 3px dashed var(--b5);
 }
 
-.dashboard a {
+.dashboard .logout {
   font-family: "Satoshi-Light", sans-serif;
   color: var(--b1);
   display: flex;
@@ -295,12 +355,12 @@ a {
   gap: 6px;
 }
 
-.dashboard a:hover {
+.dashboard .logout:hover {
   color: var(--b3);
   gap: 4px;
 }
 
-.dashboard a:hover img {
+.dashboard .logout:hover img {
   opacity: 0.3;
 }
 
@@ -359,4 +419,98 @@ a {
 
 .dashboard .tarefa img:hover {
   opacity: 0.3;
+}
+
+@media (max-width: 767px) {
+  /* estilos para mobile */
+  .home,
+  .login,
+  .cadastro {
+    padding: 0 10px;
+  }
+
+  .home .container,
+  .login .container,
+  .cadastro .container {
+    max-width: 340px;
+  }
+
+  .home .container img {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+
+  .home .container h1 {
+    font-size: 42px;
+  }
+
+  .home .container h2 {
+    font-size: 36px;
+  }
+
+  .home .container p {
+    font-size: 18px;
+  }
+
+  .home .container {
+    width: 100%;
+  }
+
+  .home .container .buttons {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home .container .buttons .btn {
+    font-size: 18px;
+    /* padding: 5px 0; */
+  }
+
+  .home .modal {
+    padding: 40px 10px 30px 10px;
+    width: 90%;
+  }
+
+  .home .modal p {
+    font-size: 14px;
+  }
+
+  .home .modal .modal-content {
+    gap: 10px;
+  }
+
+  .home .modal .logo,
+  .login .logo,
+  .cadastro .logo {
+    width: 150px;
+  }
+
+  .login h2,
+  .cadastro h2 {
+    font-size: 48px;
+  }
+
+  .login .container form,
+  .cadastro .container form {
+    padding: 20px 15px;
+  }
+
+  .login .container form label,
+  .cadastro .container form label {
+    font-size: 18px;
+  }
+
+  .login .container form input,
+  .cadastro .container form input {
+    font-family: "Satoshi-Medium", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .login .container .btn,
+  .cadastro .container .btn {
+    border-radius: 10px;
+    font-size: 18px;
+  }
 }

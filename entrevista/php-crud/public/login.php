@@ -53,7 +53,9 @@
             <button class="btn" type="submit">LOGIN</button>
             <a class="btn btn-secondary" href="cadastro.php">CRIAR CONTA</a>
         </form>
-        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+        <a href="../index.php">
+            <img class="logo" src="../assets/img/logo.svg" alt="Logo MyTask's">
+        </a>
     </div>
 </body>
 

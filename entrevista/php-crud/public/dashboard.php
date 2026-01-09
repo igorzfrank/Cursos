@@ -43,13 +43,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../assets/style/style.css">
+    <link rel="stylesheet" href="../assets/style/style.css?v=<?php echo time(); ?>">
+    <!-- <link rel="stylesheet" href="../assets/style/style.css"> -->
 </head>
 
 <body class="dashboard">
     <div class="menu">
-        <img src="../assets/img/logo.svg" alt="Logo MyTask's">
-        <a href="../config/logout.php">Desconectar <img src="../assets/img/logout.svg" alt=""></a>
+        <a href="../index.php">
+            <img src="../assets/img/logo.svg" alt="Logo MyTask's">
+        </a>
+        <a class="logout" href="../config/logout.php">Desconectar <img src="../assets/img/logout.svg" alt=""></a>
     </div>
     <div class="container">
 
